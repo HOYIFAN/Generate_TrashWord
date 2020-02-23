@@ -1,0 +1,71 @@
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-lg-12 col-xl-8 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> 你想對誰說幹話 <i class="fas fa-key"></i></h5>
+          <hr>
+          <form method="POST" action="/">
+
+            <div class="row" id="data-panel">
+
+              <div class="col-sm-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                    alt="Card image cap">
+                  <div class="card-body movie-item-body">
+                    <h6 class="card-title">工程師</h6>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                    alt="Card image cap">
+                  <div class="card-body movie-item-body">
+                    <h6 class="card-title">設計師</h6>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                    alt="Card image cap">
+                  <div class="card-body movie-item-body">
+                    <h6 class="card-title">創業家</h6>
+                  </div>
+                </div>
+              </div>
+
+              <label class="radio-inline">
+                <input type="radio" name="engineer"> 工程師
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="desinger">設計師
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="entrepreneur">創業家
+              </label>
+
+
+              <button class="btn btn-success" type="submit">產生幹話 </button>
+              {{#if trashWord}}
+              <div class="alert alert-info" role="alert">
+                <span class="mr-2"></span> <code>{{trashWord}}</code>
+              </div>
+              {{/if}}
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
